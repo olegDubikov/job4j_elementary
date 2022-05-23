@@ -2,6 +2,6 @@ package ru.job4j;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("привет Буфет");
+        System.out.println("привет буфет");
     }
 }
