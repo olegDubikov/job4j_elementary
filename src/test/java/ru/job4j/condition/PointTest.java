@@ -6,7 +6,7 @@ import org.junit.Test;
 public class PointTest {
 
     @Test
-    public void when52To34Then2() {
+    public void when52To34Then2dot82() {
         int x1 = 5;
         int y1 = 2;
         int x2 = 3;
@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void when11To07Then6() {
+    public void when11To07Then6dot08() {
         int x1 = 1;
         int y1 = 1;
         int x2 = 0;
