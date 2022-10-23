@@ -5,10 +5,7 @@ public class FindMaxLength {
         String[] shops = {"Ebay", null, "Amazon", null, "Ozon"};
         int max = 0;
         for (String el : shops) {
-            if (el == null) {
-                continue;
-            }
-            if (el.length() > max) {
+            if (el != null && el.length() > max) {
                 max = el.length();
             }
         }
