@@ -18,11 +18,11 @@ class FactTest {
     }
 
     @Test
-    void whenNumber4Factorial24() {
+    void whenIn4Factorial24() {
         Fact fact = new Fact();
-        int number = 4;
+        int in = 4;
         int expected = 24;
-        int out = fact.calc(4);
+        int out = fact.calc(in);
         assertThat(out).isEqualTo(expected);
     }
 }
