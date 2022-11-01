@@ -3,7 +3,6 @@ package ru.job4j.early;
 public class PasswordValidator {
 
     public static String validate(String password) {
-
         if (password == null) {
             throw new IllegalArgumentException("Password can't be null");
         }
@@ -26,8 +25,10 @@ public class PasswordValidator {
         for (Character el : password.toCharArray()) {
             if (Character.isDigit(el)) {
                 digit = true;
+                break;
             }
         }
+
         if (!digit) {
             throw new IllegalArgumentException("Password should contain at least one figure");
         }
@@ -36,8 +37,10 @@ public class PasswordValidator {
         for (Character el : password.toCharArray()) {
             if (!Character.isLetter(el) && !Character.isDigit(el)) {
                 symbol = true;
+                break;
             }
         }
+
         if (!symbol) {
             throw new IllegalArgumentException("Password should contain at least one special symbol");
         }
